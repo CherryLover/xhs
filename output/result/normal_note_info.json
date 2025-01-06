@@ -1,0 +1,149 @@
+{
+  "last_update_time": 1735821878000,
+  "desc": "Google Gemini 是所有一线顶级大模型当中，唯一一个 Api 可以免费白嫖的。本期视频借助互联网大善人 Cloudflare，中转一下 Gemini api，这样就可以得到一个国内免费爽用的顶级大模型。有了 api 以后，我们可以 ai 编程，可以聊天，可以音视频通话，做各种好玩的事情。",
+  "image_list": [
+    {
+      "height": 1080,
+      "width": 810,
+      "info_list": [
+        {
+          "image_scene": "WB_PRV",
+          "url": "http://sns-webpic-qc.xhscdn.com/202501061249/3489ce4523f0031d3d04152fada51e12/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_prv_wlteh_webp_3"
+        },
+        {
+          "image_scene": "WB_DFT",
+          "url": "http://sns-webpic-qc.xhscdn.com/202501061249/4264b480ab6edc5ad10e84cc69ecc567/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_dft_wlteh_webp_3"
+        }
+      ],
+      "url_default": "http://sns-webpic-qc.xhscdn.com/202501061249/4264b480ab6edc5ad10e84cc69ecc567/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_dft_wlteh_webp_3",
+      "stream": {},
+      "live_photo": false,
+      "file_id": "",
+      "url": "",
+      "trace_id": "",
+      "url_pre": "http://sns-webpic-qc.xhscdn.com/202501061249/3489ce4523f0031d3d04152fada51e12/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_prv_wlteh_webp_3"
+    }
+  ],
+  "time": 1735821878000,
+  "note_id": "67768a35000000001300845a",
+  "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30pfl5vt9lg505nae3udkkq0occm69k0",
+    "xsec_token": "ABKvZMV4xP92cF33O8nZh3XyAC3pSLkj2fbl6axniRAvQ=",
+    "user_id": "5d4e1f9b0000000012026818",
+    "nickname": "技术爬爬虾"
+  },
+  "tag_list": [],
+  "at_user_list": [],
+  "ip_location": "山东",
+  "share_info": {
+    "un_share": false
+  },
+  "title": "Cloudflare中转Gemini API，国内免费爽用",
+  "interact_info": {
+    "liked": true,
+    "liked_count": "661",
+    "collected": false,
+    "collected_count": "1006",
+    "comment_count": "23",
+    "share_count": "138",
+    "followed": false,
+    "relation": "none"
+  },
+  "video": {
+    "media": {
+      "stream": {
+        "h265": [
+          {
+            "avg_bitrate": 290006,
+            "fps": 30,
+            "video_codec": "hevc",
+            "vmaf": -1,
+            "format": "mp4",
+            "duration": 613495,
+            "master_url": "http://sns-video-al.xhscdn.com/stream/110/4/01e7768a374b60ac010370039427358ac7_4.mp4",
+            "backup_urls": [
+              "http://sns-bak-v1.xhscdn.com/stream/110/4/01e7768a374b60ac010370039427358ac7_4.mp4"
+            ],
+            "stream_desc": "X265_MP4_WEB_4",
+            "audio_bitrate": 56011,
+            "quality_type": "HD",
+            "audio_duration": 613494,
+            "audio_channels": 2,
+            "ssim": 0,
+            "height": 720,
+            "volume": 0,
+            "stream_type": 4,
+            "default_stream": 0,
+            "width": 1280,
+            "video_bitrate": 227414,
+            "video_duration": 613466,
+            "audio_codec": "aac",
+            "size": 22239663,
+            "rotate": 0,
+            "hdr_type": 0,
+            "psnr": 50.53499984741211,
+            "weight": 62
+          }
+        ],
+        "h266": [],
+        "av1": [],
+        "h264": [
+          {
+            "duration": 613495,
+            "avg_bitrate": 259804,
+            "fps": 30,
+            "audio_codec": "aac",
+            "weight": 62,
+            "video_codec": "h264",
+            "video_duration": 613466,
+            "psnr": 0,
+            "default_stream": 0,
+            "format": "mp4",
+            "audio_duration": 613494,
+            "backup_urls": [
+              "http://sns-bak-v1.xhscdn.com/stream/110/259/01e7768a374b60ac0103700394270f325e_259.mp4"
+            ],
+            "ssim": 0,
+            "stream_type": 259,
+            "stream_desc": "WM_X264_MP4",
+            "volume": 0,
+            "audio_channels": 2,
+            "quality_type": "HD",
+            "rotate": 0,
+            "width": 1280,
+            "size": 19923570,
+            "master_url": "http://sns-video-al.xhscdn.com/stream/110/259/01e7768a374b60ac0103700394270f325e_259.mp4",
+            "vmaf": -1,
+            "height": 720,
+            "video_bitrate": 189287,
+            "audio_bitrate": 64012,
+            "hdr_type": 0
+          }
+        ]
+      },
+      "video_id": 137208649663340716,
+      "video": {
+        "stream_types": [
+          259,
+          4
+        ],
+        "biz_name": 110,
+        "biz_id": "281323837705716826",
+        "duration": 614,
+        "md5": "e05b8e1a333f88a7260711497629a7a5",
+        "hdr_type": 0,
+        "drm_type": 0
+      }
+    },
+    "image": {
+      "thumbnail_fileid": "110/0/01e7768a374b60ac00100000000194270c748a_0.webp"
+    },
+    "capa": {
+      "duration": 613
+    },
+    "consumer": {
+      "origin_video_key": "spectrum/1040g35031c5eh36ige105nae3udkkq0oiulufeo"
+    }
+  },
+  "type": "video"
+}

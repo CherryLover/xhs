@@ -1,0 +1,56 @@
+{
+  "interactions": [
+    {
+      "type": "follows",
+      "name": "关注",
+      "count": "19"
+    },
+    {
+      "count": "26",
+      "type": "fans",
+      "name": "粉丝"
+    },
+    {
+      "count": "28",
+      "type": "interaction",
+      "name": "获赞与收藏"
+    }
+  ],
+  "tags": [
+    {
+      "icon": "http://ci.xiaohongshu.com/icons/user/gender-female-v1.png",
+      "name": "29岁",
+      "tagType": "info"
+    }
+  ],
+  "tab_public": {
+    "collection": true,
+    "collectionNote": {
+      "display": true,
+      "lock": false,
+      "count": 6
+    },
+    "collectionBoard": {
+      "display": true,
+      "lock": false,
+      "count": 0
+    }
+  },
+  "extra_info": {
+    "blockType": "DEFAULT"
+  },
+  "result": {
+    "success": true,
+    "code": 0,
+    "message": "success"
+  },
+  "basic_info": {
+    "desc": "",
+    "imageb": "https://sns-avatar-qc.xhscdn.com/avatar/65c35a71509a18d19c539a20.jpg?imageView2/2/w/540/format/webp",
+    "nickname": "程序杂念",
+    "images": "https://sns-avatar-qc.xhscdn.com/avatar/65c35a71509a18d19c539a20.jpg?imageView2/2/w/360/format/webp",
+    "red_id": "815333731",
+    "gender": 1,
+    "ip_location": "上海"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "note_id": "67768a35000000001300845a",
+  "title": "Cloudflare中转Gemini API，国内免费爽用",
+  "at_user_list": [],
+  "time": 1735821878000,
+  "ip_location": "山东",
+  "interact_info": {
+    "relation": "none",
+    "liked": true,
+    "liked_count": "661",
+    "collected": false,
+    "collected_count": "1006",
+    "comment_count": "23",
+    "share_count": "138",
+    "followed": false
+  },
+  "tag_list": [],
+  "type": "video",
+  "user": {
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo30pfl5vt9lg505nae3udkkq0occm69k0",
+    "xsec_token": "ABKvZMV4xP92cF33O8nZh3XyAC3pSLkj2fbl6axniRAvQ=",
+    "user_id": "5d4e1f9b0000000012026818",
+    "nickname": "技术爬爬虾"
+  },
+  "image_list": [
+    {
+      "width": 810,
+      "stream": {},
+      "live_photo": false,
+      "url_pre": "http://sns-webpic-qc.xhscdn.com/202501061251/5a1aeda9b4f2f3d11d87affa97435ef6/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_prv_wlteh_webp_3",
+      "url_default": "http://sns-webpic-qc.xhscdn.com/202501061251/f0c8e003db9476810798bd84012a8052/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_dft_wlteh_webp_3",
+      "file_id": "",
+      "height": 1080,
+      "url": "",
+      "trace_id": "",
+      "info_list": [
+        {
+          "image_scene": "WB_PRV",
+          "url": "http://sns-webpic-qc.xhscdn.com/202501061251/5a1aeda9b4f2f3d11d87affa97435ef6/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_prv_wlteh_webp_3"
+        },
+        {
+          "image_scene": "WB_DFT",
+          "url": "http://sns-webpic-qc.xhscdn.com/202501061251/f0c8e003db9476810798bd84012a8052/spectrum/1040g34o31c5ei7np0c005nae3udkkq0oj0qbnno!nd_dft_wlteh_webp_3"
+        }
+      ]
+    }
+  ],
+  "video": {
+    "media": {
+      "video_id": 137208649663340716,
+      "video": {
+        "stream_types": [
+          259,
+          4
+        ],
+        "biz_name": 110,
+        "biz_id": "281323837705716826",
+        "duration": 614,
+        "md5": "e05b8e1a333f88a7260711497629a7a5",
+        "hdr_type": 0,
+        "drm_type": 0
+      },
+      "stream": {
+        "h266": [],
+        "av1": [],
+        "h264": [
+          {
+            "audio_channels": 2,
+            "rotate": 0,
+            "psnr": 0,
+            "duration": 613495,
+            "volume": 0,
+            "fps": 30,
+            "video_duration": 613466,
+            "audio_codec": "aac",
+            "quality_type": "HD",
+            "format": "mp4",
+            "video_codec": "h264",
+            "audio_duration": 613494,
+            "ssim": 0,
+            "weight": 62,
+            "stream_type": 259,
+            "stream_desc": "WM_X264_MP4",
+            "width": 1280,
+            "size": 19923570,
+            "master_url": "http://sns-video-al.xhscdn.com/stream/110/259/01e7768a374b60ac0103700394270f325e_259.mp4",
+            "default_stream": 0,
+            "avg_bitrate": 259804,
+            "audio_bitrate": 64012,
+            "vmaf": -1,
+            "height": 720,
+            "video_bitrate": 189287,
+            "backup_urls": [
+              "http://sns-bak-v1.xhscdn.com/stream/110/259/01e7768a374b60ac0103700394270f325e_259.mp4"
+            ],
+            "hdr_type": 0
+          }
+        ],
+        "h265": [
+          {
+            "master_url": "http://sns-video-al.xhscdn.com/stream/110/4/01e7768a374b60ac010370039427358ac7_4.mp4",
+            "size": 22239663,
+            "audio_duration": 613494,
+            "rotate": 0,
+            "psnr": 50.53499984741211,
+            "avg_bitrate": 290006,
+            "video_duration": 613466,
+            "video_bitrate": 227414,
+            "audio_codec": "aac",
+            "hdr_type": 0,
+            "vmaf": -1,
+            "quality_type": "HD",
+            "stream_desc": "X265_MP4_WEB_4",
+            "width": 1280,
+            "audio_bitrate": 56011,
+            "weight": 62,
+            "height": 720,
+            "duration": 613495,
+            "fps": 30,
+            "video_codec": "hevc",
+            "stream_type": 4,
+            "volume": 0,
+            "audio_channels": 2,
+            "backup_urls": [
+              "http://sns-bak-v1.xhscdn.com/stream/110/4/01e7768a374b60ac010370039427358ac7_4.mp4"
+            ],
+            "ssim": 0,
+            "default_stream": 0,
+            "format": "mp4"
+          }
+        ]
+      }
+    },
+    "image": {
+      "thumbnail_fileid": "110/0/01e7768a374b60ac00100000000194270c748a_0.webp"
+    },
+    "capa": {
+      "duration": 613
+    },
+    "consumer": {
+      "origin_video_key": "spectrum/1040g35031c5eh36ige105nae3udkkq0oiulufeo"
+    }
+  },
+  "desc": "Google Gemini 是所有一线顶级大模型当中，唯一一个 Api 可以免费白嫖的。本期视频借助互联网大善人 Cloudflare，中转一下 Gemini api，这样就可以得到一个国内免费爽用的顶级大模型。有了 api 以后，我们可以 ai 编程，可以聊天，可以音视频通话，做各种好玩的事情。",
+  "last_update_time": 1735821878000,
+  "share_info": {
+    "un_share": false
+  }
+}
