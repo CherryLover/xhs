@@ -1,21 +1,37 @@
 import datetime
 import json
 import os
+import atexit
 import requests
+from bs4 import BeautifulSoup
 
-import xhs.help
 from xhs import XhsClient
+from sign_helper import SignHelper
+from share_link_parser import parse_share_link
 
+
+# 全局的 SignHelper 实例
+_sign_helper = None
+
+def get_sign_helper(a1):
+    global _sign_helper
+    if _sign_helper is None:
+        _sign_helper = SignHelper(cookie_value=a1)
+    return _sign_helper
+
+def cleanup():
+    """程序退出时清理资源"""
+    global _sign_helper
+    if _sign_helper:
+        _sign_helper.close()
+
+# 注册程序退出时的清理函数
+atexit.register(cleanup)
 
 def sign(uri, data=None, a1="", web_session=""):
-    # 填写自己的 flask 签名服务端口地址
-    res = requests.post("http://localhost:5005/sign",
-                        json={"uri": uri, "data": data, "a1": a1, "web_session": web_session})
-    signs = res.json()
-    return {
-        "x-s": signs["x-s"],
-        "x-t": signs["x-t"]
-    }
+    # 使用全局的 SignHelper 实例进行签名
+    sign_helper = get_sign_helper(a1)
+    return sign_helper.sign(uri, data)
     
 def get_first_normal_note(xhs_client, type: str = "normal"):
     like_notes = None
@@ -53,22 +69,19 @@ def get_user_like_notes(xhs_client, user_id):
         f.write(json.dumps(like_notes, indent=2, ensure_ascii=False))
     print("用户点赞笔记已保存到 like_notes.json")
 
-
 if __name__ == '__main__':
-    cookie = "abRequestId=4bcfbe0a-5cf0-501a-8ad2-0025702fb150; webBuild=4.53.0; xsecappid=xhs-pc-web; a1=19439aca0afu6iynk7jnc749io57kye6yyx8sy2p630000242698; webId=f2b076670b45953600cc23516ce9842f; gid=yj4q4YfDK014yj4q4Yf0jT9CWYIjI82CCS2dEhiyIhA0Iiq8JjiVK9888KY8WjW8WY8KWWKD; web_session=0400698c34a8f1112a5ad30c4f354bdc2f26a8; acw_tc=0ad5304717361338465407556e86a923e3bfbd1c693935183b214d8f2115b7; unread={%22ub%22:%226762d5fd000000000b016959%22%2C%22ue%22:%22677a80e7000000000b023479%22%2C%22uc%22:31}; websectiga=8886be45f388a1ee7bf611a69f3e174cae48f1ea02c0f8ec3256031b8be9c7ee; sec_poison_id=b9256bcb-0949-4a83-8005-1c775b05c60f"
-    xhs_client = XhsClient(cookie, sign=sign)
-    # get note info
-    # note_info = xhs_client.get_note_by_id("63db8819000000001a01ead1")
-    # print(datetime.datetime.now())
-    # print(json.dumps(note_info, indent=2))
-    # print(xhs.help.get_imgs_url_from_note(note_info))
+    cookie = "abRequestId=3d8983fd-0774-5021-afe5-91a715a9fc66; a1=19452faac32onyn8kwmbmwdm8twli3b25jk7nu6dr30000421691; webId=1a949ba2138c8e0ee166c4d33ce939a7; gid=yj4qd0Y4YW28yj4qd0Yy428vKdM1S6U8xfi23TCAYjUdT0q861Dl6D88848KKJW880K4SWiJ; web_session=0400698c34a8f1112a5acedd49354b68911d2e; customer-sso-sid=68c5174570031110560055878183567fbe5b3fde; x-user-id-creator.xiaohongshu.com=5d40ebb90000000010037a0c; customerClientId=854346337484963; access-token-creator.xiaohongshu.com=customer.creator.AT-68c517457003111056170663zpp17hoarxnoqbce; galaxy_creator_session_id=CG1YdObVpvDyUwbTOpgb3CyicvOzmnGEHpm4; galaxy.creator.beaker.session.id=1736218834507086145307; xsecappid=xhs-pc-web; webBuild=4.54.0; acw_tc=0a0bb12f17365590080705993eca76e52a9c1500c162cd4d2173ab5e59f5c7; websectiga=634d3ad75ffb42a2ade2c5e1705a73c845837578aeb31ba0e442d75c648da36a; sec_poison_id=add8da06-fc42-475c-96f8-2d21a8f37af2"
     
-    user_id = "5d40ebb90000000010037a0c"
+    share_info = "http://xhslink.com/a/vUTC3L6EXo12，复制本条信息，打开【小红书】App查看精彩内容！"
+    xhs_client = XhsClient(cookie, sign=sign)
     
     # 创建输出目录
     os.makedirs("output/result", exist_ok=True)
-
-    # get_user_like_notes(xhs_client, user_id)
     
-    get_first_normal_note(xhs_client, "normal")
+    # 解析分享链接
+    parse_share_link(share_info)
+    
+    user_id = "5d40ebb90000000010037a0c"
+    # get_user_like_notes(xhs_client, user_id)
+    # get_first_normal_note(xhs_client, "normal")
     # get_first_normal_note(xhs_client, "video")
